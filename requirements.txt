@@ -41,4 +41,7 @@ pyvis==0.3.2
 # OpenAI GPT API (install last to avoid conflicts)
 openai==1.30.1
 
+# Force pip to upgrade all dependencies to the latest compatible versions
+--upgrade-strategy eager
+
 
