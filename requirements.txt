@@ -1,0 +1,41 @@
+# requirements.txt
+
+## To upgrade pip and setuptools, run this command manually:
+# python -m pip install --upgrade pip setuptools
+
+# Core packages
+streamlit==1.34.0
+pdfplumber==0.10.3
+pytesseract==0.3.10
+Pillow==10.1.0
+
+# Sentence embeddings
+sentence-transformers==2.7.0
+torch==2.2.2
+transformers==4.41.2
+tqdm==4.66.4
+scikit-learn==1.5.0
+
+# Semantic search
+faiss-cpu==1.7.4
+
+# Visualization
+networkx==3.3
+matplotlib==3.8.4
+
+# OpenAI GPT API
+openai==1.30.1
+
+# Image & OCR support
+opencv-python==4.9.0.80
+
+# General purpose utilities
+numpy==1.26.4
+pandas==2.2.2
+
+# Web serving (optional if deploying)
+uvicorn==0.29.0
+fastapi==0.111.0
+
+# For interactive visualization (optional)
+pyvis==0.3.2
