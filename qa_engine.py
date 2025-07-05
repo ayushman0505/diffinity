@@ -6,7 +6,7 @@ import faiss
 import numpy as np
 import os
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("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")
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
