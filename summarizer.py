@@ -28,7 +28,7 @@ def summarize_differences(differences, model="gpt-3.5-turbo"):
     """
 
     try:
-        response = openai.ChatCompletion.create(
+        response = openai.chat.completions.create(
             model=model,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that summarizes document changes."},
@@ -37,6 +37,6 @@ def summarize_differences(differences, model="gpt-3.5-turbo"):
             temperature=0.5,
             max_tokens=300
         )
-        return response['choices'][0]['message']['content'].strip()
+        return response.choices[0].message.content.strip()
     except Exception as e:
         return f"Error during summarization: {str(e)}"
