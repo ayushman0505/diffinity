@@ -1,11 +1,11 @@
 # app.py
 
 import streamlit as st
-from utils.text_extractor import extract_text_from_pdf, handle_uploaded_file, cleanup_temp_file
-from utils.semantic_diff import compute_semantic_diff
-from utils.summarizer import summarize_differences
-from utils.qa_engine import SemanticQASystem
-from utils.graph_drawer import draw_diff_graph
+from text_extractor import extract_text_from_pdf, handle_uploaded_file, cleanup_temp_file
+from semantic_diff import compute_semantic_diff
+from summarizer import summarize_differences
+from qa_engine import SemanticQASystem
+from graph_drawer import draw_diff_graph
 
 st.set_page_config(page_title="Diffinity", layout="wide")
 st.title("🧠 Diffinity — Intelligent Document Comparator")
