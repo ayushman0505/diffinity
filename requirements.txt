@@ -23,8 +23,7 @@ faiss-cpu==1.7.4
 networkx==3.3
 matplotlib==3.8.4
 
-# OpenAI GPT API
-openai==1.30.1
+
 
 # Image & OCR support
 opencv-python==4.9.0.80
@@ -37,5 +36,10 @@ pandas==2.2.2
 uvicorn==0.29.0
 fastapi==0.111.0
 
-# For interactive visualization (optional)
 pyvis==0.3.2
+
+# OpenAI GPT API (install last to avoid conflicts)
+openai==1.30.1
+
+# Check for dependency issues
+pip check
