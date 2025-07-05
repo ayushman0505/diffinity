@@ -65,3 +65,7 @@ if file1 and file2:
             draw_diff_graph(st.session_state['diffs'])
 else:
     st.warning("Please upload both original and revised PDF files from the sidebar.")
+
+# Set OpenAI API Key
+import os
+os.environ["OPENAI_API_KEY"] = "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"
